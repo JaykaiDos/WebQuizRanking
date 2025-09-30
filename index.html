@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Top 10</title>
+    <link rel="stylesheet" href="ranking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🏆 TOP 10 RANKING 🏆</h1>
+            <p class="subtitle">Los mejores jugadores de todos los tiempos</p>
+        </div>
+
+        <div class="ranking-card">
+            <div id="rankingContent" class="loading">
+                ⏳ Cargando ranking...
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="ranking.js"></script>
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA-lRU8YfbeKnJGrrQWyab8Z9Jg2W7dfwk",
+    authDomain: "quizapp-2c3e0.firebaseapp.com",
+    projectId: "quizapp-2c3e0",
+    storageBucket: "quizapp-2c3e0.firebasestorage.app",
+    messagingSenderId: "1053091130557",
+    appId: "1:1053091130557:web:cb83d530625a48bfcf1bd4",
+    measurementId: "G-RVW5X1V6M4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

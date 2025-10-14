@@ -256,3 +256,32 @@ body {
         font-size: 1rem;
     }
 }
+
+.back-button-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #48cae4;
+    box-shadow: 0 4px 15px rgba(72, 202, 228, 0.3);
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(72, 202, 228, 0.5);
+}
+
+.back-button:active {
+    transform: translateY(0);
+}
